@@ -1,0 +1,22 @@
+---
+- name: ansible-lab
+  box: bento/ubuntu-20.04
+  hostname: ansible-lab
+  ipaddress: 192.168.10.1
+  memory: 1024
+  provision: script/ansible.sh
+
+- name: maquina01
+  box: bento/ubuntu-20.04
+  hostname: maquina01
+  ipaddress: 192.168.10.2
+  memory: 512
+  provision: script/ubuntu.sh
+
+- name: maquina02
+  box: bento/ubuntu-20.04
+  hostname: maquina02
+  ipaddress: 192.168.10.3
+  memory: 512
+  provision: script/ubuntu.sh
+
